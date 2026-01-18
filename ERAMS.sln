@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERAMS.API", "ERAMS.API\ERAMS.API.csproj", "{370DCF6B-CBC5-4B70-9E2B-41C6492079E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERAMS.UI", "ERAMS.UI\ERAMS.UI.csproj", "{14078AE2-E9D2-4799-87E6-0CEE8EC09615}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{370DCF6B-CBC5-4B70-9E2B-41C6492079E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370DCF6B-CBC5-4B70-9E2B-41C6492079E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370DCF6B-CBC5-4B70-9E2B-41C6492079E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370DCF6B-CBC5-4B70-9E2B-41C6492079E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14078AE2-E9D2-4799-87E6-0CEE8EC09615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14078AE2-E9D2-4799-87E6-0CEE8EC09615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14078AE2-E9D2-4799-87E6-0CEE8EC09615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14078AE2-E9D2-4799-87E6-0CEE8EC09615}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

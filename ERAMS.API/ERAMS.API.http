@@ -1,0 +1,6 @@
+@ERAMS.API_HostAddress = http://localhost:5036
+
+GET {{ERAMS.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
