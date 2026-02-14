@@ -1,9 +1,11 @@
-﻿namespace ERAMS.API.Service
+﻿using ERAMS.API.Dto;
+
+namespace ERAMS.API.Service
 {
     public interface IAuthService
     {
-        Task Register(string username, string email, string password, int roleid);
-        Task<string> LogIn(string email, string password);
+        Task Register(RegisterRequest register);
+        Task<string> LogIn(LoginRequest request);
 
 
     }
