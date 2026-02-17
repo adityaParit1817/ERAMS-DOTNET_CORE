@@ -1,4 +1,6 @@
-﻿using ERAMS.API.Dto;
+﻿using Azure.Core;
+using ERAMS.API.Dto;
+using ERAMS.API.Helper;
 using ERAMS.API.Service;
 using Microsoft.AspNetCore.Http;
 //using Microsoft.AspNetCore.Identity.Data;
@@ -14,12 +16,14 @@ namespace ERAMS.API.Controllers
 
         private readonly IAuthService _authService;
 
+
         public AuthController(IAuthService authservice)
         {
             _authService = authservice;
+           
         }
 
-        [HttpPost]
+        [HttpPost("Register")]
         public async Task<IActionResult> Register(RegisterRequest request)
         {
             try
@@ -34,13 +38,18 @@ namespace ERAMS.API.Controllers
             }
         }
 
-        [HttpPost]
-        public async Task<IActionResult> LogIn(LoginRequest reuest)
+        [HttpPost("Log-In")]
+        public async Task<IActionResult> LogIn(LoginRequest request)
         {
             try
             {
-                await _authService.LogIn(reuest);
-                return Ok("User LogIn Successfully");
+                var token = await _authService.LogIn(request);
+
+                return Ok(new
+                {
+                    Message = "User Logged In Successfully",
+                    AccessToken = token
+                });
             }
             catch (Exception ex)
             {
